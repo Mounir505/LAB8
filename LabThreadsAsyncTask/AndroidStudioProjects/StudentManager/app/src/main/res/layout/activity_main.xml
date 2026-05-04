@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOUVEL ÉTUDIANT"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom de famille"
+        android:inputType="textCapCharacters"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prénom"
+        android:inputType="textCapWords"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENREGISTRER"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="32dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RECHERCHE / ACTION PAR ID"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez l'ID de l'étudiant"
+        android:inputType="number"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/load"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CHERCHER"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#2196F3"/>
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SUPPRIMER"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#F44336"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Aucun résultat"
+        android:textColor="#555555"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:background="#E0E0E0"/>
+
+</LinearLayout>
+</ScrollView>

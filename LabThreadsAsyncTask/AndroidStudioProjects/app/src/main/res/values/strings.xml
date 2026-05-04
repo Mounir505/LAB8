@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LabThreadsAsyncTask</string>
+    <string name="status_ready">Statut : Prêt</string>
+    <string name="image_description">Image de test</string>
+    <string name="btn_load_thread">Charger Image (Thread)</string>
+    <string name="btn_calc_executor">Calcul Lourd (Executor)</string>
+    <string name="btn_test_toast">Tester Réactivité (Toast)</string>
+    <string name="status_loading_thread">Statut : Chargement via Thread...</string>
+    <string name="status_image_loaded">Statut : Image affichée !</string>
+    <string name="status_calc_running">Statut : Calcul en cours (Executor)...</string>
+    <string name="status_calc_result">Résultat final : %1$d</string>
+</resources>
